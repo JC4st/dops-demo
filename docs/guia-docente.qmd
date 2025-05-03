@@ -1,0 +1,14 @@
+---
+title: "Guía para Docentes"
+format: html
+---
+
+# Guía para el Uso Docente de DOPS
+
+Esta guía está dirigida a instructores clínicos que deseen implementar DOPS en un entorno de formación médica. Aquí encontrarás:
+
+- Qué es DOPS y cómo aplicarlo
+- Cómo registrar observaciones en la app
+- Cómo interpretar los reportes
+- Consejos para retroalimentación efectiva
+

@@ -1,0 +1,13 @@
+---
+title: "Guía para Estudiantes"
+format: html
+---
+
+# Guía para el Uso de DOPS como Estudiante
+
+Esta guía te ayudará a comprender cómo se utilizan las evaluaciones DOPS y cómo sacarles el mayor provecho para tu aprendizaje:
+
+- Qué se espera durante una observación
+- Cómo interpretar tu retroalimentación
+- Cómo usar los reportes para mejorar tu práctica clínica
+

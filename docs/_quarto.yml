@@ -1,22 +1,23 @@
 project:
   type: website
-  output-dir: ../docs
 
 website:
-  title: "docs"
+  title: "DOPS Demo"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Inicio
+      - href: analisis.qmd
+        text: Análisis
+      - href: guia-docente.qmd
+        text: Guía Docente
+      - href: guia-estudiante.qmd
+        text: Guía Estudiante
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    lang: es
+    theme: cosmo
     toc: true
-
-
-
+    toc-depth: 2
+    number-sections: true

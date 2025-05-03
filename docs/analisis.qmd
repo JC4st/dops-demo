@@ -1,0 +1,14 @@
+---
+title: "Análisis de Evaluaciones"
+format: html
+---
+
+# Análisis de Datos Simulados
+
+Esta sección presenta análisis exploratorios de las evaluaciones DOPS simuladas. Puedes incluir:
+
+- Tablas resumen por estudiante, procedimiento o ítem
+- Cálculo del ICC (coeficiente de correlación intraclase)
+- Gráficos de progresión
+- Comparación entre evaluadores
+

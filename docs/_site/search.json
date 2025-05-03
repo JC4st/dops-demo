@@ -11,6 +11,27 @@
     "href": "index.html",
     "title": "DOPS Demo Toolkit",
     "section": "",
-    "text": "Bienvenido\nEste es el sitio de documentación para el proyecto DOPS Demo.\nAquí encontrarás:\n\nIntroducción al método DOPS.\nDatos simulados y cómo analizarlos.\nRecursos para docentes y estudiantes.\nEnlace a la app de demostración."
+    "text": "1 Bienvenido\nEste es el sitio de documentación para el proyecto DOPS Demo.\nAquí encontrarás:\n\nIntroducción al método DOPS.\nDatos simulados y cómo analizarlos.\nRecursos para docentes y estudiantes.\nEnlace a la app de demostración."
+  },
+  {
+    "objectID": "analisis.html",
+    "href": "analisis.html",
+    "title": "Análisis de Evaluaciones",
+    "section": "",
+    "text": "1 Análisis de Datos Simulados\nEsta sección presenta análisis exploratorios de las evaluaciones DOPS simuladas. Puedes incluir:\n\nTablas resumen por estudiante, procedimiento o ítem\nCálculo del ICC (coeficiente de correlación intraclase)\nGráficos de progresión\nComparación entre evaluadores"
+  },
+  {
+    "objectID": "guia-estudiante.html",
+    "href": "guia-estudiante.html",
+    "title": "Guía para Estudiantes",
+    "section": "",
+    "text": "1 Guía para el Uso de DOPS como Estudiante\nEsta guía te ayudará a comprender cómo se utilizan las evaluaciones DOPS y cómo sacarles el mayor provecho para tu aprendizaje:\n\nQué se espera durante una observación\nCómo interpretar tu retroalimentación\nCómo usar los reportes para mejorar tu práctica clínica"
+  },
+  {
+    "objectID": "guia-docente.html",
+    "href": "guia-docente.html",
+    "title": "Guía para Docentes",
+    "section": "",
+    "text": "1 Guía para el Uso Docente de DOPS\nEsta guía está dirigida a instructores clínicos que deseen implementar DOPS en un entorno de formación médica. Aquí encontrarás:\n\nQué es DOPS y cómo aplicarlo\nCómo registrar observaciones en la app\nCómo interpretar los reportes\nConsejos para retroalimentación efectiva"
   }
 ]
