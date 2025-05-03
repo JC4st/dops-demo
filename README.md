@@ -14,7 +14,8 @@ Facilitar el uso educativo de DOPS mediante una herramienta digital que:
 - Ofrezca retroalimentación visual para apoyar el aprendizaje.
 
 ## 📁 Estructura del repositorio
-  
+
+```
 dops-demo/
   ├── README.md            # Este archivo
   ├── app/                 # Código de la aplicación Shiny
@@ -23,7 +24,7 @@ dops-demo/
   ├── docs/                # Sitio web generado con Quarto
   ├── learn/               # Guías y recursos educativos
   └── .gitignore           # Archivos a excluir del control de versiones
-  
+```
 
 ## 🧪 Datos simulados
 
