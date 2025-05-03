@@ -13,6 +13,8 @@ website:
         text: Guía Docente
       - href: guia-estudiante.qmd
         text: Guía Estudiante
+      - href: about.qmd
+        text: Acerca del proyecto
 
 format:
   html:

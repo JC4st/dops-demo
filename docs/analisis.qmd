@@ -1,14 +1,51 @@
 ---
-title: "Análisis de Evaluaciones"
+title: "Análisis Individual del Estudiante"
 format: html
 ---
 
-# Análisis de Datos Simulados
+# Análisis DOPS para un estudiante
 
-Esta sección presenta análisis exploratorios de las evaluaciones DOPS simuladas. Puedes incluir:
+Este informe muestra los puntajes obtenidos por un estudiante específico en las evaluaciones DOPS simuladas. Se presentan los resultados por procedimiento y por ítem.
 
-- Tablas resumen por estudiante, procedimiento o ítem
-- Cálculo del ICC (coeficiente de correlación intraclase)
-- Gráficos de progresión
-- Comparación entre evaluadores
+## Seleccionar estudiante
 
+```{r}
+library(tidyverse)
+
+# Leer datos
+df <- read_csv("data/dops_simulada.csv")
+items <- paste0("item_", 1:12)
+
+# Elegir estudiante (puedes cambiar el ID aquí)
+estudiante_id <- "estudiante_1"
+
+# Filtrar solo ese estudiante
+df_estudiante <- df %>%
+  filter(id_estudiante == estudiante_id)
+```
+
+## Tabla: Puntaje promedio por procedimiento
+
+```{r}
+tabla_proc <- df_estudiante %>%
+  group_by(procedimiento) %>%
+  summarise(across(all_of(items), mean, na.rm = TRUE)) %>%
+  pivot_longer(cols = -procedimiento, names_to = "Ítem", values_to = "Puntaje_promedio")
+
+# Mostrar en formato ancho
+tabla_proc %>%
+  pivot_wider(names_from = procedimiento, values_from = Puntaje_promedio)
+```
+
+## Gráfico: Comparación de puntajes por ítem
+
+```{r}
+ggplot(tabla_proc, aes(x = Ítem, y = Puntaje_promedio, fill = procedimiento)) +
+  geom_col(position = "dodge") +
+  labs(title = paste("Puntaje por ítem -", estudiante_id),
+       x = "Ítem evaluado",
+       y = "Puntaje promedio") +
+  scale_y_continuous(limits = c(0, 5)) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
