@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca del proyecto",
+    "section": "",
+    "text": "Este proyecto fue desarrollado por Juan Castellanos como parte del máster en Clinical Education de la Universidad de Edimburgo."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DOPS Demo Toolkit",
+    "section": "",
+    "text": "Bienvenido\nEste es el sitio de documentación para el proyecto DOPS Demo.\nAquí encontrarás:\n\nIntroducción al método DOPS.\nDatos simulados y cómo analizarlos.\nRecursos para docentes y estudiantes.\nEnlace a la app de demostración."
+  }
+]

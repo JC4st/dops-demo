@@ -1,0 +1,6 @@
+---
+title: "Acerca del proyecto"
+format: html
+---
+
+Este proyecto fue desarrollado por Juan Castellanos como parte del máster en Clinical Education de la Universidad de Edimburgo.

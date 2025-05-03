@@ -1,0 +1,15 @@
+---
+title: "DOPS Demo Toolkit"
+format: html
+---
+
+# Bienvenido
+
+Este es el sitio de documentación para el proyecto **DOPS Demo**.
+
+Aquí encontrarás:
+
+- Introducción al método DOPS.
+- Datos simulados y cómo analizarlos.
+- Recursos para docentes y estudiantes.
+- Enlace a la app de demostración.

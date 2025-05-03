@@ -1,9 +1,4 @@
----
-title: "README"
-editor_options:
-  markdown:
-    mode: gfm
----
+
 
 # DOPS Demo: Evaluación Formativa y Sumativa en Procedimientos Clínicos
 
