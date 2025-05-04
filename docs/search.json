@@ -53,42 +53,49 @@
     "href": "guia-docente.html",
     "title": "Guía para Docentes - Evaluación DOPS",
     "section": "",
-    "text": "La Evaluación Directa de Habilidades Procedimentales (DOPS, por sus siglas en inglés) es un instrumento de evaluación en el lugar de trabajo (WPBA) diseñado para observar procedimientos clínicos reales, proveer retroalimentación inmediata y fomentar el aprendizaje reflexivo.\nEn nuestro curso de nefrología intervencionista, DOPS permite evaluar competencias técnicas como:\n\nInserción de catéteres venosos (temporales y tunelizados)\nUso de fluoroscopia para posicionamiento preciso\nEvaluación del estado de volumen con ultrasonido"
+    "text": "Esta guía docente está diseñada para facilitar la enseñanza y evaluación de competencias clínicas en el entorno del trabajo. Se alinea con las recomendaciones del AMEE Guide No. 31, que destaca la importancia de la observación directa, la retroalimentación formativa y la participación activa del estudiante en su propio proceso de aprendizaje."
+  },
+  {
+    "objectID": "guia-docente.html#instrumentos-de-evaluación",
+    "href": "guia-docente.html#instrumentos-de-evaluación",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "2.1 Instrumentos de evaluación",
+    "text": "2.1 Instrumentos de evaluación\n\n2.1.1 Mini-CEX:\n\nObservación estructurada de encuentros clínicos breves.\nDuración: 15 minutos + 5 minutos de retroalimentación.\nEvaluaciones múltiples con diferentes docentes.\n\n\n\n2.1.2 DOPS (Direct Observation of Procedural Skills):\n\nObservación directa de procedimientos (ej. canalización venosa, toma de muestras).\nUso de escala de 6 puntos.\nCada evaluación incluye retroalimentación estructurada.\n\n\n\n2.1.3 Discusión de Casos (CbD):\n\nEvaluación del razonamiento clínico mediante análisis de casos documentados.\nDiscusión de decisiones diagnósticas y terapéuticas."
   },
   {
     "objectID": "guia-docente.html#paso-1-accede-a-la-app",
     "href": "guia-docente.html#paso-1-accede-a-la-app",
     "title": "Guía para Docentes - Evaluación DOPS",
-    "section": "3.1 Paso 1: Accede a la app",
-    "text": "3.1 Paso 1: Accede a la app\n\nIngresa a: https://necardio.shinyapps.io/dops\nInicia sesión como evaluador (no requiere registro previo)"
+    "section": "5.1 Paso 1: Accede a la app",
+    "text": "5.1 Paso 1: Accede a la app\n\nIngresa a: https://necardio.shinyapps.io/dops\nInicia sesión como evaluador (no requiere registro previo)"
   },
   {
     "objectID": "guia-docente.html#paso-2-selecciona-el-procedimiento-observado",
     "href": "guia-docente.html#paso-2-selecciona-el-procedimiento-observado",
     "title": "Guía para Docentes - Evaluación DOPS",
-    "section": "3.2 Paso 2: Selecciona el procedimiento observado",
-    "text": "3.2 Paso 2: Selecciona el procedimiento observado\n\nEjemplos: CVC temporal, CVC tunelizado, ultrasonido de volumen"
+    "section": "5.2 Paso 2: Selecciona el procedimiento observado",
+    "text": "5.2 Paso 2: Selecciona el procedimiento observado\n\nEjemplos: CVC temporal, CVC tunelizado, ultrasonido de volumen"
   },
   {
     "objectID": "guia-docente.html#paso-3-evalúa-cada-dominio",
     "href": "guia-docente.html#paso-3-evalúa-cada-dominio",
     "title": "Guía para Docentes - Evaluación DOPS",
-    "section": "3.3 Paso 3: Evalúa cada dominio",
-    "text": "3.3 Paso 3: Evalúa cada dominio\nPara cada dominio, selecciona una de las siguientes opciones:\n\n🔴 Por debajo de lo esperado\n\n🟡 En el límite\n\n🟢 Cumple con lo esperado\n\n🟢🔵 Por encima de lo esperado\n\n⚪️ No aplica / No observado\n\nDominios evaluados: - Técnica estéril - Habilidad técnica - Profesionalismo - Comunicación - Control de aguja y posicionamiento del catéter (según procedimiento)"
+    "section": "5.3 Paso 3: Evalúa cada dominio",
+    "text": "5.3 Paso 3: Evalúa cada dominio\nPara cada dominio, selecciona una de las siguientes opciones:\n\n🔴 Por debajo de lo esperado\n\n🟡 En el límite\n\n🟢 Cumple con lo esperado\n\n🟢🔵 Por encima de lo esperado\n\n⚪️ No aplica / No observado\n\nDominios evaluados: - Técnica estéril - Habilidad técnica - Profesionalismo - Comunicación - Control de aguja y posicionamiento del catéter (según procedimiento)"
   },
   {
     "objectID": "guia-docente.html#paso-4-escribe-observaciones",
     "href": "guia-docente.html#paso-4-escribe-observaciones",
     "title": "Guía para Docentes - Evaluación DOPS",
-    "section": "3.4 Paso 4: Escribe observaciones",
-    "text": "3.4 Paso 4: Escribe observaciones\nIncluye un comentario breve que:\n\nRefuerce lo que hizo bien\nSeñale un aspecto a mejorar\nSugiera una acción concreta"
+    "section": "5.4 Paso 4: Escribe observaciones",
+    "text": "5.4 Paso 4: Escribe observaciones\nIncluye un comentario breve que:\n\nRefuerce lo que hizo bien\nSeñale un aspecto a mejorar\nSugiera una acción concreta"
   },
   {
     "objectID": "guia-docente.html#paso-5-enviar-evaluación",
     "href": "guia-docente.html#paso-5-enviar-evaluación",
     "title": "Guía para Docentes - Evaluación DOPS",
-    "section": "3.5 Paso 5: Enviar evaluación",
-    "text": "3.5 Paso 5: Enviar evaluación\nPresiona “Enviar evaluación”. El sistema guardará la entrada con sello de tiempo en la base de datos."
+    "section": "5.5 Paso 5: Enviar evaluación",
+    "text": "5.5 Paso 5: Enviar evaluación\nPresiona “Enviar evaluación”. El sistema guardará la entrada con sello de tiempo en la base de datos."
   },
   {
     "objectID": "about.html",
