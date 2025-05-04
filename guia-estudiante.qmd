@@ -1,13 +1,110 @@
 ---
-title: "Guía para Estudiantes"
+title: "Guía para Estudiantes - Evaluación DOPS"
 format: html
 ---
 
-# Guía para el Uso de DOPS como Estudiante
+# ¿Qué es DOPS?
 
-Esta guía te ayudará a comprender cómo se utilizan las evaluaciones DOPS y cómo sacarles el mayor provecho para tu aprendizaje:
+La Evaluación Directa de Habilidades Procedimentales (DOPS) es una herramienta de observación en entornos reales. Permite que un docente o par evalúe tu ejecución de un procedimiento clínico y te brinde retroalimentación inmediata.
 
-- Qué se espera durante una observación
-- Cómo interpretar tu retroalimentación
-- Cómo usar los reportes para mejorar tu práctica clínica
+> 🧠 DOPS no solo mide tus habilidades técnicas, sino también tu razonamiento clínico, comunicación, profesionalismo y capacidad de integrar información en tiempo real.
 
+---
+
+# ¿Qué procedimientos se evalúan?
+
+Durante el curso, puedes ser evaluado en:
+
+- Inserción de catéter venoso temporal o tunelizado
+- Evaluación del estado de volumen con ultrasonido
+- Uso de fluoroscopia para posicionamiento de catéter
+
+Cada uno de estos procedimientos tiene ítems específicos que serán observados.
+
+---
+
+# ¿Cómo se realiza una DOPS?
+
+1. **Durante el procedimiento**, un docente o par observa tu desempeño.  
+2. Evalúa entre 11 y 12 dominios según el procedimiento.  
+3. Al terminar, te entrega retroalimentación breve (5 minutos).  
+4. La evaluación se guarda en una base de datos segura.
+
+---
+
+# ¿Qué aspectos se observan?
+
+Estos son algunos dominios evaluados:
+
+- Conocimiento del procedimiento
+- Técnica estéril
+- Habilidad técnica
+- Manejo de complicaciones
+- Comunicación con el paciente y el equipo
+- Profesionalismo
+- Item específico del procedimiento (ej. control de la guía, posicionamiento del catéter)
+
+Cada ítem se califica así:
+
+- 🔴 Por debajo de lo esperado  
+- 🟡 En el límite  
+- 🟢 Cumple con lo esperado  
+- 🟢🔵 Por encima de lo esperado  
+- ⚪️ No observado
+
+---
+
+# ¿Qué hago con la retroalimentación?
+
+La retroalimentación es el núcleo del proceso. Te sugerimos:
+
+- **Escuchar con apertura**
+- **Pedir ejemplos concretos**
+- **Anotar recomendaciones**
+- **Plantear objetivos para la próxima observación**
+- **Solicitar una nueva DOPS si deseas practicar y mejorar**
+
+> “El objetivo no es juzgarte, sino ayudarte a crecer.”
+
+---
+
+# ¿Cuántas DOPS necesito?
+
+No hay un número mínimo obligatorio, pero se recomienda:
+
+- Solicitar al menos una DOPS por semana
+- Participar en evaluaciones de tus pares para aprender observando
+- Para validación sumativa: al menos 3 observaciones por procedimiento, realizadas por distintos evaluadores
+
+---
+
+# ¿Dónde puedo ver mis resultados?
+
+Cada evaluación se guarda digitalmente. Puedes solicitar un **reporte de desempeño** con:
+
+- Historial de evaluaciones
+- Comparación por procedimiento
+- Análisis por ítem
+- Comentarios de evaluadores
+
+Estos reportes son útiles para:
+
+- Reflexionar sobre tu progreso
+- Prepararte para certificaciones
+- Identificar fortalezas y áreas por mejorar
+
+---
+
+# Consejos para aprovechar al máximo las DOPS
+
+✅ Solicita observaciones cuando te sientas listo, pero no esperes la perfección.  
+✅ Revisa tu retroalimentación con calma.  
+✅ Anota 1-2 acciones para tu próxima práctica.  
+✅ Usa los reportes como mapa de progreso.  
+✅ Apoya a tus compañeros con coevaluaciones respetuosas.
+
+---
+
+# ¿Tienes dudas?
+
+Habla con tu tutor o escribe a: [juan.castellanos@urosario.edu.co](mailto:juan.castellanos@urosario.edu.co)

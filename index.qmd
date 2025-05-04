@@ -5,7 +5,7 @@ format: html
 
 # Bienvenido
 
-👋 Bienvenido a la demo de evaluación DOPS para entornos clínicos.Este es el sitio de documentación para el proyecto **DOPS Demo**.
+👋 Bienvenido a la demo de evaluación DOPS para entornos clínicos. Este es el sitio de documentación para el proyecto **DOPS Demo**.
 
 Aquí encontrarás:
 

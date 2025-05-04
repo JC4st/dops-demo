@@ -7,55 +7,6 @@
     "text": "Este panel presenta un resumen visual y tabulado del desempeño de un estudiante en evaluaciones clínicas tipo DOPS.\nSe destacan las áreas de fortaleza y oportunidad, organizadas por procedimiento y criterios específicos de evaluación.\n➡️ Puedes seleccionar el estudiante de interés al inicio del código o adaptar esta plantilla para usarla con datos reales.\nEste informe muestra los puntajes obtenidos por un estudiante específico en las evaluaciones DOPS simuladas. Se presentan los resultados por procedimiento y por ítem.\n\n\n\n\n\n\n\n\nNota\n\n\n\nPuedes cambiar \"estudiante_1\" por el identificador real del estudiante en la base de datos.\n\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(knitr)\nlibrary(fmsb)\n\n# Leer datos\ndf &lt;- read_csv(\"data/DOPS_Simulada.csv\")\n\nRows: 90 Columns: 17\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr   (4): id_estudiante, procedimiento, evaluador, assessment_type\ndbl  (12): item_1, item_2, item_3, item_4, item_5, item_6, item_7, item_8, i...\ndttm  (1): timestamp\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nitems &lt;- paste0(\"item_\", 1:12)\n\n# Elegir estudiante (puedes cambiar el ID aquí)\nestudiante_id &lt;- \"estudiante_1\"\n\n# Filtrar solo ese estudiante\ndf_estudiante &lt;- df %&gt;%\n  filter(id_estudiante == estudiante_id)\n\n\n\n\n\nLa siguiente tabla muestra el puntaje promedio del estudiante por cada ítem evaluado, comparando distintos procedimientos clínicos.\n\n\n\n\n\n\nÍtem\nBiopsia\nCVC\nPOCUS\n\n\n\n\nEntendimiento básico\n2.333333\n3.333333\n3.666667\n\n\nConsentimiento\n4.333333\n3.333333\n1.666667\n\n\nPreparación\n3.333333\n3.333333\n2.666667\n\n\nAnalgesia\n2.666667\n3.000000\n1.333333\n\n\nTécnica\n3.333333\n4.333333\n3.000000\n\n\nAsepaia\n3.333333\n3.666667\n2.666667\n\n\nBusca ayuda\n3.000000\n2.333333\n3.666667\n\n\nPost-procedimiento\n1.666667\n3.666667\n2.333333\n\n\nComunicación\n3.333333\n3.000000\n3.000000\n\n\nProfesionalismo\n2.333333\n3.666667\n3.000000\n\n\nGlobal\n2.333333\n3.666667\n3.000000\n\n\nTarea específica\n4.000000\n3.000000\n4.000000\n\n\n\n\n\n\n\n\n\nEste gráfico permite identificar patrones de desempeño, diferencias entre procedimientos y posibles áreas de mejora.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEste análisis puede servir como base para una conversación estructurada de retroalimentación con el estudiante.\nSe recomienda discutir:\n\nFortalezas identificadas consistentemente\n\nÍtems con puntuaciones bajas o variables\n\nSiguientes pasos para reforzar competencias\n\nPuedes complementar este análisis con observaciones cualitativas y planes de acción personalizados."
   },
   {
-    "objectID": "analisis.html#seleccionar-estudiante",
-    "href": "analisis.html#seleccionar-estudiante",
-    "title": "Análisis Individual del Estudiante",
-    "section": "",
-    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Leer datos\ndf &lt;- read_csv(\"data/DOPS_Simulada.csv\")\n\nRows: 90 Columns: 17\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr   (4): id_estudiante, procedimiento, evaluador, assessment_type\ndbl  (12): item_1, item_2, item_3, item_4, item_5, item_6, item_7, item_8, i...\ndttm  (1): timestamp\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nitems &lt;- paste0(\"item_\", 1:12)\n\n# Elegir estudiante (puedes cambiar el ID aquí)\nestudiante_id &lt;- \"estudiante_1\"\n\n# Filtrar solo ese estudiante\ndf_estudiante &lt;- df %&gt;%\n  filter(id_estudiante == estudiante_id)"
-  },
-  {
-    "objectID": "analisis.html#tabla-puntaje-promedio-por-procedimiento",
-    "href": "analisis.html#tabla-puntaje-promedio-por-procedimiento",
-    "title": "Análisis Individual del Estudiante",
-    "section": "",
-    "text": "tabla_proc &lt;- df_estudiante %&gt;%\n  group_by(procedimiento) %&gt;%\n  summarise(across(all_of(items), mean, na.rm = TRUE)) %&gt;%\n  pivot_longer(cols = -procedimiento, names_to = \"Ítem\", values_to = \"Puntaje_promedio\")\n\n# Mostrar en formato ancho\ntabla_proc %&gt;%\n  pivot_wider(names_from = procedimiento, values_from = Puntaje_promedio)\n\n# A tibble: 12 × 4\n   Ítem    Biopsia   CVC POCUS\n   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1 item_1     2.33  3.33  3.67\n 2 item_2     4.33  3.33  1.67\n 3 item_3     3.33  3.33  2.67\n 4 item_4     2.67  3     1.33\n 5 item_5     3.33  4.33  3   \n 6 item_6     3.33  3.67  2.67\n 7 item_7     3     2.33  3.67\n 8 item_8     1.67  3.67  2.33\n 9 item_9     3.33  3     3   \n10 item_10    2.33  3.67  3   \n11 item_11    2.33  3.67  3   \n12 item_12    4     3     4"
-  },
-  {
-    "objectID": "analisis.html#gráfico-comparación-de-puntajes-por-ítem",
-    "href": "analisis.html#gráfico-comparación-de-puntajes-por-ítem",
-    "title": "Análisis Individual del Estudiante",
-    "section": "",
-    "text": "ggplot(tabla_proc, aes(x = Ítem, y = Puntaje_promedio, fill = procedimiento)) +\n  geom_col(position = \"dodge\") +\n  labs(title = paste(\"Puntaje por ítem -\", estudiante_id),\n       x = \"Ítem evaluado\",\n       y = \"Puntaje promedio\") +\n  scale_y_continuous(limits = c(0, 5)) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DOPS Demo Toolkit",
-    "section": "",
-    "text": "1 Bienvenido\n👋 Bienvenido a la demo de evaluación DOPS para entornos clínicos.Este es el sitio de documentación para el proyecto DOPS Demo.\nAquí encontrarás:\n\nIntroducción al método DOPS.\nDatos simulados y cómo analizarlos.\nRecursos para docentes y estudiantes.\nEnlace a la app de demostración.\n\n🧪 ¿Qué es esto?\nUn sitio diseñado para mostrar cómo usar R + Shiny + Supabase para recolectar y analizar observaciones clínicas.\n🔗 Accede a la app interactiva"
-  },
-  {
-    "objectID": "guia-estudiante.html",
-    "href": "guia-estudiante.html",
-    "title": "Guía para Estudiantes",
-    "section": "",
-    "text": "1 Guía para el Uso de DOPS como Estudiante\nEsta guía te ayudará a comprender cómo se utilizan las evaluaciones DOPS y cómo sacarles el mayor provecho para tu aprendizaje:\n\nQué se espera durante una observación\nCómo interpretar tu retroalimentación\nCómo usar los reportes para mejorar tu práctica clínica"
-  },
-  {
-    "objectID": "guia-docente.html",
-    "href": "guia-docente.html",
-    "title": "Guía para Docentes",
-    "section": "",
-    "text": "1 Guía para el Uso Docente de DOPS\nEsta guía está dirigida a instructores clínicos que deseen implementar DOPS en un entorno de formación médica. Aquí encontrarás:\n\nQué es DOPS y cómo aplicarlo\nCómo registrar observaciones en la app\nCómo interpretar los reportes\nConsejos para retroalimentación efectiva"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Acerca del proyecto",
-    "section": "",
-    "text": "Este proyecto fue desarrollado por el Dr. Juan Castellanos de la Hoz como parte de su trabajo de maestría en educación clínica, con el objetivo de mejorar la evaluación de habilidades procedimentales en entornos de posgrado.\n🔧 Tecnologías usadas: - R + Shiny - Supabase - Quarto + GitHub Pages\n📫 Contacto:\nUniversidad del Rosario\nUniversidad de Edinburgo"
-  },
-  {
     "objectID": "analisis.html#paso-1-seleccionar-al-estudiante-a-analizar",
     "href": "analisis.html#paso-1-seleccionar-al-estudiante-a-analizar",
     "title": "Análisis Individual del Estudiante",
@@ -82,5 +33,68 @@
     "title": "Análisis Individual del Estudiante",
     "section": "",
     "text": "Este análisis puede servir como base para una conversación estructurada de retroalimentación con el estudiante.\nSe recomienda discutir:\n\nFortalezas identificadas consistentemente\n\nÍtems con puntuaciones bajas o variables\n\nSiguientes pasos para reforzar competencias\n\nPuedes complementar este análisis con observaciones cualitativas y planes de acción personalizados."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DOPS Demo Toolkit",
+    "section": "",
+    "text": "1 Bienvenido\n👋 Bienvenido a la demo de evaluación DOPS para entornos clínicos. Este es el sitio de documentación para el proyecto DOPS Demo.\nAquí encontrarás:\n\nIntroducción al método DOPS.\nDatos simulados y cómo analizarlos.\nRecursos para docentes y estudiantes.\nEnlace a la app de demostración.\n\n🧪 ¿Qué es esto?\nUn sitio diseñado para mostrar cómo usar R + Shiny + Supabase para recolectar y analizar observaciones clínicas.\n🔗 Accede a la app interactiva"
+  },
+  {
+    "objectID": "guia-estudiante.html",
+    "href": "guia-estudiante.html",
+    "title": "Guía para Estudiantes - Evaluación DOPS",
+    "section": "",
+    "text": "1 ¿Qué es DOPS?\nLa Evaluación Directa de Habilidades Procedimentales (DOPS) es una herramienta de observación en entornos reales. Permite que un docente o par evalúe tu ejecución de un procedimiento clínico y te brinde retroalimentación inmediata.\n\n🧠 DOPS no solo mide tus habilidades técnicas, sino también tu razonamiento clínico, comunicación, profesionalismo y capacidad de integrar información en tiempo real.\n\n\n\n\n2 ¿Qué procedimientos se evalúan?\nDurante el curso, puedes ser evaluado en:\n\nInserción de catéter venoso temporal o tunelizado\nEvaluación del estado de volumen con ultrasonido\nUso de fluoroscopia para posicionamiento de catéter\n\nCada uno de estos procedimientos tiene ítems específicos que serán observados.\n\n\n\n3 ¿Cómo se realiza una DOPS?\n\nDurante el procedimiento, un docente o par observa tu desempeño.\n\nEvalúa entre 11 y 12 dominios según el procedimiento.\n\nAl terminar, te entrega retroalimentación breve (5 minutos).\n\nLa evaluación se guarda en una base de datos segura.\n\n\n\n\n4 ¿Qué aspectos se observan?\nEstos son algunos dominios evaluados:\n\nConocimiento del procedimiento\nTécnica estéril\nHabilidad técnica\nManejo de complicaciones\nComunicación con el paciente y el equipo\nProfesionalismo\nItem específico del procedimiento (ej. control de la guía, posicionamiento del catéter)\n\nCada ítem se califica así:\n\n🔴 Por debajo de lo esperado\n\n🟡 En el límite\n\n🟢 Cumple con lo esperado\n\n🟢🔵 Por encima de lo esperado\n\n⚪️ No observado\n\n\n\n\n5 ¿Qué hago con la retroalimentación?\nLa retroalimentación es el núcleo del proceso. Te sugerimos:\n\nEscuchar con apertura\nPedir ejemplos concretos\nAnotar recomendaciones\nPlantear objetivos para la próxima observación\nSolicitar una nueva DOPS si deseas practicar y mejorar\n\n\n“El objetivo no es juzgarte, sino ayudarte a crecer.”\n\n\n\n\n6 ¿Cuántas DOPS necesito?\nNo hay un número mínimo obligatorio, pero se recomienda:\n\nSolicitar al menos una DOPS por semana\nParticipar en evaluaciones de tus pares para aprender observando\nPara validación sumativa: al menos 3 observaciones por procedimiento, realizadas por distintos evaluadores\n\n\n\n\n7 ¿Dónde puedo ver mis resultados?\nCada evaluación se guarda digitalmente. Puedes solicitar un reporte de desempeño con:\n\nHistorial de evaluaciones\nComparación por procedimiento\nAnálisis por ítem\nComentarios de evaluadores\n\nEstos reportes son útiles para:\n\nReflexionar sobre tu progreso\nPrepararte para certificaciones\nIdentificar fortalezas y áreas por mejorar\n\n\n\n\n8 Consejos para aprovechar al máximo las DOPS\n✅ Solicita observaciones cuando te sientas listo, pero no esperes la perfección.\n✅ Revisa tu retroalimentación con calma.\n✅ Anota 1-2 acciones para tu próxima práctica.\n✅ Usa los reportes como mapa de progreso.\n✅ Apoya a tus compañeros con coevaluaciones respetuosas.\n\n\n\n9 ¿Tienes dudas?\nHabla con tu tutor o escribe a: juan.castellanos@urosario.edu.co"
+  },
+  {
+    "objectID": "guia-docente.html",
+    "href": "guia-docente.html",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "",
+    "text": "La Evaluación Directa de Habilidades Procedimentales (DOPS, por sus siglas en inglés) es un instrumento de evaluación en el lugar de trabajo (WPBA) diseñado para observar procedimientos clínicos reales, proveer retroalimentación inmediata y fomentar el aprendizaje reflexivo.\nEn nuestro curso de nefrología intervencionista, DOPS permite evaluar competencias técnicas como:\n\nInserción de catéteres venosos (temporales y tunelizados)\nUso de fluoroscopia para posicionamiento preciso\nEvaluación del estado de volumen con ultrasonido"
+  },
+  {
+    "objectID": "guia-docente.html#paso-1-accede-a-la-app",
+    "href": "guia-docente.html#paso-1-accede-a-la-app",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "3.1 Paso 1: Accede a la app",
+    "text": "3.1 Paso 1: Accede a la app\n\nIngresa a: https://necardio.shinyapps.io/dops\nInicia sesión como evaluador (no requiere registro previo)"
+  },
+  {
+    "objectID": "guia-docente.html#paso-2-selecciona-el-procedimiento-observado",
+    "href": "guia-docente.html#paso-2-selecciona-el-procedimiento-observado",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "3.2 Paso 2: Selecciona el procedimiento observado",
+    "text": "3.2 Paso 2: Selecciona el procedimiento observado\n\nEjemplos: CVC temporal, CVC tunelizado, ultrasonido de volumen"
+  },
+  {
+    "objectID": "guia-docente.html#paso-3-evalúa-cada-dominio",
+    "href": "guia-docente.html#paso-3-evalúa-cada-dominio",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "3.3 Paso 3: Evalúa cada dominio",
+    "text": "3.3 Paso 3: Evalúa cada dominio\nPara cada dominio, selecciona una de las siguientes opciones:\n\n🔴 Por debajo de lo esperado\n\n🟡 En el límite\n\n🟢 Cumple con lo esperado\n\n🟢🔵 Por encima de lo esperado\n\n⚪️ No aplica / No observado\n\nDominios evaluados: - Técnica estéril - Habilidad técnica - Profesionalismo - Comunicación - Control de aguja y posicionamiento del catéter (según procedimiento)"
+  },
+  {
+    "objectID": "guia-docente.html#paso-4-escribe-observaciones",
+    "href": "guia-docente.html#paso-4-escribe-observaciones",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "3.4 Paso 4: Escribe observaciones",
+    "text": "3.4 Paso 4: Escribe observaciones\nIncluye un comentario breve que:\n\nRefuerce lo que hizo bien\nSeñale un aspecto a mejorar\nSugiera una acción concreta"
+  },
+  {
+    "objectID": "guia-docente.html#paso-5-enviar-evaluación",
+    "href": "guia-docente.html#paso-5-enviar-evaluación",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "3.5 Paso 5: Enviar evaluación",
+    "text": "3.5 Paso 5: Enviar evaluación\nPresiona “Enviar evaluación”. El sistema guardará la entrada con sello de tiempo en la base de datos."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca del proyecto",
+    "section": "",
+    "text": "Este proyecto fue desarrollado por el Dr. Juan Castellanos de la Hoz como parte de su trabajo de maestría en educación clínica, con el objetivo de mejorar la evaluación de habilidades procedimentales en entornos de posgrado.\n🔧 Tecnologías usadas: - R + Shiny - Supabase - Quarto + GitHub Pages\n📫 Contacto:\nUniversidad del Rosario\nUniversidad de Edinburgo"
   }
 ]
