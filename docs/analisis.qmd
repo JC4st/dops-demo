@@ -13,7 +13,7 @@ Este informe muestra los puntajes obtenidos por un estudiante específico en las
 library(tidyverse)
 
 # Leer datos
-df <- read_csv("data/dops_simulada.csv")
+df <- read_csv("data/DOPS_Simulada.csv")
 items <- paste0("item_", 1:12)
 
 # Elegir estudiante (puedes cambiar el ID aquí)
