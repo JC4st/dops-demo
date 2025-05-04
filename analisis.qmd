@@ -3,14 +3,26 @@ title: "Análisis Individual del Estudiante"
 format: html
 ---
 
-# Análisis DOPS para un estudiante
+# Análisis de Desempeño Individual en Evaluaciones DOPS
+
+Este panel presenta un resumen visual y tabulado del desempeño de un estudiante en evaluaciones clínicas tipo DOPS.  
+Se destacan las áreas de fortaleza y oportunidad, organizadas por procedimiento y criterios específicos de evaluación.
+
+➡️ Puedes seleccionar el estudiante de interés al inicio del código o adaptar esta plantilla para usarla con datos reales.
 
 Este informe muestra los puntajes obtenidos por un estudiante específico en las evaluaciones DOPS simuladas. Se presentan los resultados por procedimiento y por ítem.
 
-## Seleccionar estudiante
+## Paso 1: Seleccionar al estudiante a analizar
 
+::: {.callout-note}
+Puedes cambiar `"estudiante_1"` por el identificador real del estudiante en la base de datos.
+:::
+
+::: {.cell}
 ```{r}
 library(tidyverse)
+library(knitr)
+library(fmsb)
 
 # Leer datos
 df <- read_csv("data/DOPS_Simulada.csv")
@@ -23,23 +35,47 @@ estudiante_id <- "estudiante_1"
 df_estudiante <- df %>%
   filter(id_estudiante == estudiante_id)
 ```
+:::
 
-## Tabla: Puntaje promedio por procedimiento
+## Paso 2: Revisar desempeño por procedimiento
 
-```{r}
+La siguiente tabla muestra el puntaje promedio del estudiante por cada ítem evaluado, comparando distintos procedimientos clínicos.
+
+::: {.cell}
+```{r warning = FALSE, echo=FALSE}
 tabla_proc <- df_estudiante %>%
   group_by(procedimiento) %>%
   summarise(across(all_of(items), mean, na.rm = TRUE)) %>%
-  pivot_longer(cols = -procedimiento, names_to = "Ítem", values_to = "Puntaje_promedio")
+  pivot_longer(cols = -procedimiento, names_to = "Ítem", values_to = "Puntaje_promedio") %>%
+  mutate(
+    Ítem = recode(Ítem,
+                  item_1 = "Entendimiento básico",
+                  item_2 = "Consentimiento", 
+                  item_3 = "Preparación", 
+                  item_4 = "Analgesia",
+                  item_5 = "Técnica", 
+                  item_6 = "Asepaia", 
+                  item_7 = "Busca ayuda",
+                  item_8 = "Post-procedimiento",
+                  item_9 = "Comunicación", 
+                  item_10 = "Profesionalismo", 
+                  item_11 = "Global",
+                  item_12 = "Tarea específica")
+  )
 
 # Mostrar en formato ancho
 tabla_proc %>%
-  pivot_wider(names_from = procedimiento, values_from = Puntaje_promedio)
+  pivot_wider(names_from = procedimiento, values_from = Puntaje_promedio) %>%
+  kable()
 ```
+:::
 
-## Gráfico: Comparación de puntajes por ítem
+## Paso 3: Comparar desempeño por ítem evaluado
 
-```{r}
+Este gráfico permite identificar patrones de desempeño, diferencias entre procedimientos y posibles áreas de mejora.
+
+::: {.cell}
+```{r echo=FALSE}
 ggplot(tabla_proc, aes(x = Ítem, y = Puntaje_promedio, fill = procedimiento)) +
   geom_col(position = "dodge") +
   labs(title = paste("Puntaje por ítem -", estudiante_id),
@@ -49,3 +85,56 @@ ggplot(tabla_proc, aes(x = Ítem, y = Puntaje_promedio, fill = procedimiento)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+:::
+
+::: {.cell}
+```{r, echo=FALSE, fig.width=7, fig.height=7}
+
+df_items <- df_estudiante %>%
+  select(all_of(items))
+
+means <- colMeans(df_items, na.rm = TRUE)
+
+if (all(is.na(means))) {
+  cat("No hay datos suficientes.")
+} else {
+  radar_data <- rbind(
+    rep(4, length(means)),
+    rep(1, length(means)),
+    means
+  )
+  colnames(radar_data) <- c(
+    "Entendimiento básico", "Consentimiento", "Preparación", "Analgesia",
+    "Técnica", "Asepsia", "Busca ayuda", "Post-procedimiento",
+    "Communicación", "Profesionalismo", "Global", "Tarea específica"
+  )
+
+  radar_data <- as.data.frame(radar_data)
+
+  radarchart(radar_data,
+             axistype = 1,
+             pcol = "#0072B2",
+             pfcol = rgb(0.1, 0.5, 0.8, 0.3),
+             plwd = 2,
+             cglcol = "grey",
+             cglty = 1,
+             axislabcol = "black",
+             caxislabels = c("1", "2", "3", "4"),
+             vlcex = 0.8,
+             title = paste("Gráfico radar de", estudiante_id)
+  )
+}
+```
+:::
+
+## Reflexión educativa
+
+Este análisis puede servir como base para una conversación estructurada de retroalimentación con el estudiante.  
+Se recomienda discutir:
+
+- Fortalezas identificadas consistentemente  
+- Ítems con puntuaciones bajas o variables  
+- Siguientes pasos para reforzar competencias  
+
+Puedes complementar este análisis con observaciones cualitativas y planes de acción personalizados.
+

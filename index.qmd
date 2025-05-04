@@ -5,7 +5,7 @@ format: html
 
 # Bienvenido
 
-Este es el sitio de documentación para el proyecto **DOPS Demo**.
+👋 Bienvenido a la demo de evaluación DOPS para entornos clínicos.Este es el sitio de documentación para el proyecto **DOPS Demo**.
 
 Aquí encontrarás:
 
@@ -13,3 +13,9 @@ Aquí encontrarás:
 - Datos simulados y cómo analizarlos.
 - Recursos para docentes y estudiantes.
 - Enlace a la app de demostración.
+
+
+🧪 **¿Qué es esto?**  
+Un sitio diseñado para mostrar cómo usar R + Shiny + Supabase para recolectar y analizar observaciones clínicas.
+
+🔗 [Accede a la app interactiva](https://necardio.shinyapps.io/dops/)

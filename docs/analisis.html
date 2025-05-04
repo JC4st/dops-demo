@@ -159,11 +159,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">En esta página</h2>
    
   <ul class="collapse">
-  <li><a href="#análisis-dops-para-un-estudiante" id="toc-análisis-dops-para-un-estudiante" class="nav-link active" data-scroll-target="#análisis-dops-para-un-estudiante"><span class="header-section-number">1</span> Análisis DOPS para un estudiante</a>
+  <li><a href="#análisis-de-desempeño-individual-en-evaluaciones-dops" id="toc-análisis-de-desempeño-individual-en-evaluaciones-dops" class="nav-link active" data-scroll-target="#análisis-de-desempeño-individual-en-evaluaciones-dops"><span class="header-section-number">1</span> Análisis de Desempeño Individual en Evaluaciones DOPS</a>
   <ul class="collapse">
-  <li><a href="#seleccionar-estudiante" id="toc-seleccionar-estudiante" class="nav-link" data-scroll-target="#seleccionar-estudiante"><span class="header-section-number">1.1</span> Seleccionar estudiante</a></li>
-  <li><a href="#tabla-puntaje-promedio-por-procedimiento" id="toc-tabla-puntaje-promedio-por-procedimiento" class="nav-link" data-scroll-target="#tabla-puntaje-promedio-por-procedimiento"><span class="header-section-number">1.2</span> Tabla: Puntaje promedio por procedimiento</a></li>
-  <li><a href="#gráfico-comparación-de-puntajes-por-ítem" id="toc-gráfico-comparación-de-puntajes-por-ítem" class="nav-link" data-scroll-target="#gráfico-comparación-de-puntajes-por-ítem"><span class="header-section-number">1.3</span> Gráfico: Comparación de puntajes por ítem</a></li>
+  <li><a href="#paso-1-seleccionar-al-estudiante-a-analizar" id="toc-paso-1-seleccionar-al-estudiante-a-analizar" class="nav-link" data-scroll-target="#paso-1-seleccionar-al-estudiante-a-analizar"><span class="header-section-number">1.1</span> Paso 1: Seleccionar al estudiante a analizar</a></li>
+  <li><a href="#paso-2-revisar-desempeño-por-procedimiento" id="toc-paso-2-revisar-desempeño-por-procedimiento" class="nav-link" data-scroll-target="#paso-2-revisar-desempeño-por-procedimiento"><span class="header-section-number">1.2</span> Paso 2: Revisar desempeño por procedimiento</a></li>
+  <li><a href="#paso-3-comparar-desempeño-por-ítem-evaluado" id="toc-paso-3-comparar-desempeño-por-ítem-evaluado" class="nav-link" data-scroll-target="#paso-3-comparar-desempeño-por-ítem-evaluado"><span class="header-section-number">1.3</span> Paso 3: Comparar desempeño por ítem evaluado</a></li>
+  <li><a href="#reflexión-educativa" id="toc-reflexión-educativa" class="nav-link" data-scroll-target="#reflexión-educativa"><span class="header-section-number">1.4</span> Reflexión educativa</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -190,11 +191,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="análisis-dops-para-un-estudiante" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Análisis DOPS para un estudiante</h1>
+<section id="análisis-de-desempeño-individual-en-evaluaciones-dops" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Análisis de Desempeño Individual en Evaluaciones DOPS</h1>
+<p>Este panel presenta un resumen visual y tabulado del desempeño de un estudiante en evaluaciones clínicas tipo DOPS.<br>
+Se destacan las áreas de fortaleza y oportunidad, organizadas por procedimiento y criterios específicos de evaluación.</p>
+<p>➡️ Puedes seleccionar el estudiante de interés al inicio del código o adaptar esta plantilla para usarla con datos reales.</p>
 <p>Este informe muestra los puntajes obtenidos por un estudiante específico en las evaluaciones DOPS simuladas. Se presentan los resultados por procedimiento y por ítem.</p>
-<section id="seleccionar-estudiante" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="seleccionar-estudiante"><span class="header-section-number">1.1</span> Seleccionar estudiante</h2>
+<section id="paso-1-seleccionar-al-estudiante-a-analizar" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="paso-1-seleccionar-al-estudiante-a-analizar"><span class="header-section-number">1.1</span> Paso 1: Seleccionar al estudiante a analizar</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Puedes cambiar <code>"estudiante_1"</code> por el identificador real del estudiante en la base de datos.</p>
+</div>
+</div>
+<div class="cell">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -209,8 +227,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer datos</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/DOPS_Simulada.csv"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fmsb)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer datos</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/DOPS_Simulada.csv"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 90 Columns: 17
 ── Column specification ────────────────────────────────────────────────────────
@@ -231,61 +252,107 @@ dttm  (1): timestamp
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>df_estudiante <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(id_estudiante <span class="sc">==</span> estudiante_id)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="tabla-puntaje-promedio-por-procedimiento" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="tabla-puntaje-promedio-por-procedimiento"><span class="header-section-number">1.2</span> Tabla: Puntaje promedio por procedimiento</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tabla_proc <span class="ot">&lt;-</span> df_estudiante <span class="sc">%&gt;%</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(procedimiento) <span class="sc">%&gt;%</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(items), mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>procedimiento, <span class="at">names_to =</span> <span class="st">"Ítem"</span>, <span class="at">values_to =</span> <span class="st">"Puntaje_promedio"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: There was 1 warning in `summarise()`.
-ℹ In argument: `across(all_of(items), mean, na.rm = TRUE)`.
-ℹ In group 1: `procedimiento = "Biopsia"`.
-Caused by warning:
-! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
-Supply arguments directly to `.fns` through an anonymous function instead.
-
-  # Previously
-  across(a:b, mean, na.rm = TRUE)
-
-  # Now
-  across(a:b, \(x) mean(x, na.rm = TRUE))</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar en formato ancho</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>tabla_proc <span class="sc">%&gt;%</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> procedimiento, <span class="at">values_from =</span> Puntaje_promedio)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 12 × 4
-   Ítem    Biopsia   CVC POCUS
-   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
- 1 item_1     2.33  3.33  3.67
- 2 item_2     4.33  3.33  1.67
- 3 item_3     3.33  3.33  2.67
- 4 item_4     2.67  3     1.33
- 5 item_5     3.33  4.33  3   
- 6 item_6     3.33  3.67  2.67
- 7 item_7     3     2.33  3.67
- 8 item_8     1.67  3.67  2.33
- 9 item_9     3.33  3     3   
-10 item_10    2.33  3.67  3   
-11 item_11    2.33  3.67  3   
-12 item_12    4     3     4   </code></pre>
-</div>
 </div>
 </section>
-<section id="gráfico-comparación-de-puntajes-por-ítem" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="gráfico-comparación-de-puntajes-por-ítem"><span class="header-section-number">1.3</span> Gráfico: Comparación de puntajes por ítem</h2>
+<section id="paso-2-revisar-desempeño-por-procedimiento" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="paso-2-revisar-desempeño-por-procedimiento"><span class="header-section-number">1.2</span> Paso 2: Revisar desempeño por procedimiento</h2>
+<p>La siguiente tabla muestra el puntaje promedio del estudiante por cada ítem evaluado, comparando distintos procedimientos clínicos.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tabla_proc, <span class="fu">aes</span>(<span class="at">x =</span> Ítem, <span class="at">y =</span> Puntaje_promedio, <span class="at">fill =</span> procedimiento)) <span class="sc">+</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Puntaje por ítem -"</span>, estudiante_id),</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Ítem evaluado"</span>,</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Puntaje promedio"</span>) <span class="sc">+</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ítem</th>
+<th style="text-align: right;">Biopsia</th>
+<th style="text-align: right;">CVC</th>
+<th style="text-align: right;">POCUS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Entendimiento básico</td>
+<td style="text-align: right;">2.333333</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">3.666667</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Consentimiento</td>
+<td style="text-align: right;">4.333333</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">1.666667</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Preparación</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">2.666667</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Analgesia</td>
+<td style="text-align: right;">2.666667</td>
+<td style="text-align: right;">3.000000</td>
+<td style="text-align: right;">1.333333</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Técnica</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">4.333333</td>
+<td style="text-align: right;">3.000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asepaia</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">3.666667</td>
+<td style="text-align: right;">2.666667</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Busca ayuda</td>
+<td style="text-align: right;">3.000000</td>
+<td style="text-align: right;">2.333333</td>
+<td style="text-align: right;">3.666667</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Post-procedimiento</td>
+<td style="text-align: right;">1.666667</td>
+<td style="text-align: right;">3.666667</td>
+<td style="text-align: right;">2.333333</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Comunicación</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">3.000000</td>
+<td style="text-align: right;">3.000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Profesionalismo</td>
+<td style="text-align: right;">2.333333</td>
+<td style="text-align: right;">3.666667</td>
+<td style="text-align: right;">3.000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Global</td>
+<td style="text-align: right;">2.333333</td>
+<td style="text-align: right;">3.666667</td>
+<td style="text-align: right;">3.000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tarea específica</td>
+<td style="text-align: right;">4.000000</td>
+<td style="text-align: right;">3.000000</td>
+<td style="text-align: right;">4.000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="paso-3-comparar-desempeño-por-ítem-evaluado" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="paso-3-comparar-desempeño-por-ítem-evaluado"><span class="header-section-number">1.3</span> Paso 3: Comparar desempeño por ítem evaluado</h2>
+<p>Este gráfico permite identificar patrones de desempeño, diferencias entre procedimientos y posibles áreas de mejora.</p>
+<div class="cell">
+<div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -294,6 +361,31 @@ Supply arguments directly to `.fns` through an anonymous function instead.
 </div>
 </div>
 </div>
+</div>
+<div class="cell">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="reflexión-educativa" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="reflexión-educativa"><span class="header-section-number">1.4</span> Reflexión educativa</h2>
+<p>Este análisis puede servir como base para una conversación estructurada de retroalimentación con el estudiante.<br>
+Se recomienda discutir:</p>
+<ul>
+<li>Fortalezas identificadas consistentemente<br>
+</li>
+<li>Ítems con puntuaciones bajas o variables<br>
+</li>
+<li>Siguientes pasos para reforzar competencias</li>
+</ul>
+<p>Puedes complementar este análisis con observaciones cualitativas y planes de acción personalizados.</p>
 
 
 </section>
