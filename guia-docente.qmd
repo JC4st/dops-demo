@@ -21,16 +21,22 @@ Existen diversas herramientas de evaluación basadas en el lugar de trabajo (Wor
 - Duración: 15 minutos + 5 minutos de retroalimentación.
 - Evaluaciones múltiples con diferentes docentes.
 
+![Ejemplo de Mini-CEX](img/mini-CEX.png)
+
 ### DOPS (Direct Observation of Procedural Skills):
 
 - Observación directa de procedimientos (ej. canalización venosa, toma de muestras).
 - Uso de escala de 6 puntos.
 - Cada evaluación incluye retroalimentación estructurada.
 
+![Ejemplo de DOPS](img/dops.png)
+
 ### Discusión de Casos (CbD):
 
 - Evaluación del razonamiento clínico mediante análisis de casos documentados.
 - Discusión de decisiones diagnósticas y terapéuticas.
+
+![Ejemplo de CbD](img/CbD.png)
 
 ------------------------------------------------------------------------
 
