@@ -53,7 +53,7 @@
     "href": "guia-docente.html",
     "title": "Guía para Docentes - Evaluación DOPS",
     "section": "",
-    "text": "Esta guía docente está diseñada para facilitar la enseñanza y evaluación de competencias clínicas en el entorno del trabajo. Se alinea con las recomendaciones del AMEE Guide No. 31, que destaca la importancia de la observación directa, la retroalimentación formativa y la participación activa del estudiante en su propio proceso de aprendizaje."
+    "text": "Esta guía está diseñada para ayudar a docentes clínicos a integrar evaluaciones observacionales (como DOPS) en su práctica diaria de enseñanza.\nEsta guía docente está diseñada para facilitar la enseñanza y evaluación de competencias clínicas en el entorno del trabajo. Se alinea con las recomendaciones del AMEE Guide No. 31, que destaca la importancia de la observación directa, la retroalimentación formativa y la participación activa del estudiante en su propio proceso de aprendizaje."
   },
   {
     "objectID": "guia-docente.html#instrumentos-de-evaluación",
@@ -96,6 +96,20 @@
     "title": "Guía para Docentes - Evaluación DOPS",
     "section": "5.5 Paso 5: Enviar evaluación",
     "text": "5.5 Paso 5: Enviar evaluación\nPresiona “Enviar evaluación”. El sistema guardará la entrada con sello de tiempo en la base de datos."
+  },
+  {
+    "objectID": "guia-docente.html#cómo-dar-retroalimentación-útil",
+    "href": "guia-docente.html#cómo-dar-retroalimentación-útil",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "9.1 ¿Cómo dar retroalimentación útil?",
+    "text": "9.1 ¿Cómo dar retroalimentación útil?\nUtiliza el modelo: - Lo que hizo bien - Qué debe mejorar - Cómo puede lograrlo\n\nEjemplo: “Mantuviste una técnica estéril adecuada en todo momento. Para mejorar, podrías practicar la orientación del ecógrafo antes de la punción para optimizar el plano. Sugiero revisar el video tutorial al respecto.”"
+  },
+  {
+    "objectID": "guia-docente.html#evaluación-sumativa-con-dops",
+    "href": "guia-docente.html#evaluación-sumativa-con-dops",
+    "title": "Guía para Docentes - Evaluación DOPS",
+    "section": "9.2 Evaluación sumativa con DOPS",
+    "text": "9.2 Evaluación sumativa con DOPS\nPara que una evaluación DOPS sea válida como componente sumativo: - Debe haber al menos tres evaluaciones por procedimiento - Deben participar al menos tres evaluadores distintos - Se analizará la confiabilidad interevaluador (ICC) - El criterio de competencia se establece por consenso entre docentes\nEste enfoque busca garantizar la equidad, objetividad y transparencia del proceso evaluativo.\n\nPara una guía dirigida a estudiantes, consulta esta página."
   },
   {
     "objectID": "about.html",

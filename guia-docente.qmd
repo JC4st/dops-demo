@@ -3,11 +3,14 @@ title: "Guía para Docentes - Evaluación DOPS"
 format: html
 ---
 
-# Introducción
+# Introducción: Enseñar y Evaluar en el Contexto Clínico
+
+Esta guía está diseñada para ayudar a docentes clínicos a integrar evaluaciones observacionales (como DOPS) en su práctica diaria de enseñanza.
 
 Esta guía docente está diseñada para facilitar la enseñanza y evaluación de competencias clínicas en el entorno del trabajo. Se alinea con las recomendaciones del AMEE Guide No. 31, que destaca la importancia de la observación directa, la retroalimentación formativa y la participación activa del estudiante en su propio proceso de aprendizaje.
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # Evaluación en el Lugar de Trabajo (WBA)
 
@@ -38,7 +41,8 @@ Existen diversas herramientas de evaluación basadas en el lugar de trabajo (Wor
 
 ![Ejemplo de CbD](img/CbD.png)
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # ¿Qué es DOPS?
 
@@ -50,7 +54,8 @@ En nuestro curso de nefrología intervencionista, DOPS permite evaluar competenc
 -   Uso de fluoroscopia para posicionamiento preciso
 -   Evaluación del estado de volumen con ultrasonido
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # ¿Por qué usar DOPS?
 
@@ -62,7 +67,8 @@ DOPS ofrece:
 ✅ Seguimiento longitudinal del progreso del estudiante\
 ✅ Datos para decisiones formativas y sumativas
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # ¿Cómo realizar una evaluación DOPS?
 
@@ -99,7 +105,8 @@ Incluye un comentario breve que:
 
 Presiona “Enviar evaluación”. El sistema guardará la entrada con sello de tiempo en la base de datos.
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # ¿Qué sucede con los datos?
 
@@ -107,7 +114,8 @@ Presiona “Enviar evaluación”. El sistema guardará la entrada con sello de 
 -   Se pueden generar reportes individuales para analizar el progreso.
 -   En evaluaciones sumativas, deben realizarse **al menos 3 DOPS por procedimiento**, con distintos evaluadores.
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # Buenas prácticas para docentes
 
@@ -117,7 +125,8 @@ Presiona “Enviar evaluación”. El sistema guardará la entrada con sello de 
 👥 **Promueve la autoevaluación y la coevaluación entre pares.**\
 📊 **Consulta los reportes de análisis para guiar tutorías individuales.**
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # Evaluación sumativa
 
@@ -128,7 +137,8 @@ Para que una DOPS cuente como parte de la evaluación sumativa:
 -   Los resultados serán analizados para calcular confiabilidad interevaluador (ICC).
 -   El criterio final de competencia debe basarse en datos agregados, no en una sola observación.
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
 
 # ¿Preguntas o soporte?
 
@@ -137,4 +147,31 @@ Si tienes dudas sobre cómo usar la herramienta o interpretar resultados:
 📧 Contacta a: [juan.castellanos\@urosario.edu.co](mailto:juan.castellanos@urosario.edu.co)\
 🔗 Accede al repositorio: [github.com/JC4st/dops-project](https://github.com/JC4st/dops-project)
 
-------------------------------------------------------------------------
+::: {.divider}
+:::
+
+
+## ¿Cómo dar retroalimentación útil?
+
+Utiliza el modelo:
+- Lo que hizo bien
+- Qué debe mejorar
+- Cómo puede lograrlo
+
+> Ejemplo: “Mantuviste una técnica estéril adecuada en todo momento. Para mejorar, podrías practicar la orientación del ecógrafo antes de la punción para optimizar el plano. Sugiero revisar el video tutorial al respecto.”
+
+
+## Evaluación sumativa con DOPS
+
+Para que una evaluación DOPS sea válida como componente sumativo:
+- Debe haber **al menos tres evaluaciones** por procedimiento
+- Deben participar **al menos tres evaluadores distintos**
+- Se analizará la confiabilidad interevaluador (ICC)
+- El criterio de competencia se establece por consenso entre docentes
+
+Este enfoque busca garantizar la equidad, objetividad y transparencia del proceso evaluativo.
+
+
+---
+
+Para una guía dirigida a estudiantes, consulta [esta página](guia-estudiante.qmd).
